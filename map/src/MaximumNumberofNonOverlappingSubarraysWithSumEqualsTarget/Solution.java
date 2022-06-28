@@ -30,11 +30,11 @@ public class Solution {
             prefixSum[i] = prefixSum[i - 1] + nums[i];
             int t = prefixSum[i] - target;
             if (map.containsKey(t)) {
-                int index = map.get(t);
-                if (index + 1 > prev) {
-                    int[] pair = {index + 1, i};
+                int index = map.get(t) + 1;
+                if (index > prev) {
+                    int[] pair = {index, i};
                     list.add(pair);
-                    prev = index + 1;
+                    prev = index;
                 }
             }
             map.put(prefixSum[i], i);
