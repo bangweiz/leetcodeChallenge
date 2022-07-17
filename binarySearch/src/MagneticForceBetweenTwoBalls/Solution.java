@@ -14,7 +14,6 @@ public class Solution {
         Arrays.sort(position);
         int right = (position[position.length - 1] - position[0]) / (m - 1);
         int left = 1;
-
         while (left < right - 1) {
             int mid = (right + left) / 2;
             if (isValid(position, m, mid)) {
@@ -30,10 +29,8 @@ public class Solution {
     }
 
     private boolean isValid(int[] position, int m, int mid) {
-        boolean flag = true;
         int prev = position[0];
         int count = 1;
-
         for (int i = 1; i < position.length; i++) {
             if (count + 1 == m) {
                 break;
@@ -44,10 +41,8 @@ public class Solution {
             }
         }
         if (count + 1 == m) {
-            flag = position[position.length - 1] - prev >= mid;
-        } else {
-            flag = false;
+            return position[position.length - 1] - prev >= mid;
         }
-        return flag;
+        return false;
     }
 }
