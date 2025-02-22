@@ -19,7 +19,7 @@ describe("Queue", () => {
 
 	test("remove values", () => {
 		const q = new Queue<number>();
-        expect(q.size).toBe(0);
+		expect(q.size).toBe(0);
 		expect(q.popFront()).toBeNull();
 		expect(q.popBack()).toBeNull();
 		expect(q.peekBack()).toBeNull();
