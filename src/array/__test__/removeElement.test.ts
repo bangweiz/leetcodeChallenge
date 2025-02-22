@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import removeElement from "../removeElement.ts";
+import removeElement from "../removeElement";
 
 describe("remove element", () => {
 	test("test 1", () => {

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 
-import merge from "../mergeSortedArray.ts";
+import merge from "../mergeSortedArray";
 
 describe("merge sorted array", () => {
 	test("test 1", () => {
