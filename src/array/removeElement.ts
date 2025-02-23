@@ -4,9 +4,7 @@ function removeElement(nums: number[], val: number): number {
 	let count = 0;
 	while (i1 < nums.length) {
 		if (nums[i1] !== val) {
-			const temp = nums[i1];
-			nums[i1] = nums[i2];
-			nums[i2] = temp;
+			[nums[i1], nums[i2]] = [nums[i2], nums[i1]];
 			i2++;
 			count++;
 		}

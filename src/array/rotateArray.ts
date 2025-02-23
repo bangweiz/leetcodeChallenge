@@ -9,9 +9,10 @@ function rotate(nums: number[], k: number): void {
 		}
 
 		for (let i = 0; i < rotateLength; i++) {
-			const [v1, v2] = [nums[start + i], nums[nums.length - rotateLength + i]];
-			nums[start + i] = v2;
-			nums[nums.length - rotateLength + i] = v1;
+			[nums[nums.length - rotateLength + i], nums[start + i]] = [
+				nums[start + i],
+				nums[nums.length - rotateLength + i],
+			];
 		}
 		swap(start + rotateLength, rotateLength);
 	}
