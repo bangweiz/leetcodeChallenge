@@ -4,7 +4,9 @@ function productExceptSelf(nums: number[]): number[] {
 		prefixProduct[i + 1] = prefixProduct[i] * nums[i];
 	}
 
-	const res: number[] = new Array(nums.length).fill(prefixProduct[nums.length - 1]);
+	const res: number[] = new Array(nums.length).fill(
+		prefixProduct[nums.length - 1],
+	);
 	let suffixProduct = 1;
 	for (let i = nums.length - 1; i > 0; i--) {
 		suffixProduct *= nums[i];
