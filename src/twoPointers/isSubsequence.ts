@@ -9,8 +9,8 @@ function isSubsequence(s: string, t: string): boolean {
 			pointerS++;
 			pointerT++;
 		} else {
-		    pointerT++;
-        }
+			pointerT++;
+		}
 	}
 	return true;
 }
