@@ -7,12 +7,12 @@ function minSubArrayLen(target: number, nums: number[]): number {
 		if (sum >= target) {
 			count = Math.min(count, right - left + 1);
 			if (left === right) {
-                right++;
+				right++;
 				sum += nums[right];
-            }
-            sum -= nums[left];
-            left++;
-        } else {
+			}
+			sum -= nums[left];
+			left++;
+		} else {
 			right++;
 			sum += nums[right];
 		}
