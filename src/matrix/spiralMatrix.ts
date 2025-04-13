@@ -7,9 +7,9 @@ enum Direction {
 
 function spiralOrder(matrix: number[][]): number[] {
 	const visited: boolean[][] = [];
-    for (let i = 0; i < matrix.length; i++) {
-        visited.push(new Array(matrix[i].length).fill(false));
-    }
+	for (let i = 0; i < matrix.length; i++) {
+		visited.push(new Array(matrix[i].length).fill(false));
+	}
 	const res: number[] = [];
 
 	move(Direction.Right, 0, 0);
