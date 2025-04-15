@@ -2,7 +2,7 @@ import { describe, expect, test } from "bun:test";
 
 import spiralOrder from "../spiralMatrix";
 
-describe("valid sudoku", () => {
+describe("spiral matrix", () => {
 	test("test 1", () => {
 		const matrix = [
 			[1, 2, 3],

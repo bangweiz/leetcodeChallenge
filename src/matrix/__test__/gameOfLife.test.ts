@@ -2,7 +2,7 @@ import { describe, expect, test } from "bun:test";
 
 import gameOfLife from "../gameOfLife";
 
-describe("set matrix zeroes", () => {
+describe("game of life", () => {
 	test("test 1", () => {
 		const matrix = [
 			[0, 1, 0],
