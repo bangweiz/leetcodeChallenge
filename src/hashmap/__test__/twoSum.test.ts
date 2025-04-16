@@ -2,7 +2,7 @@ import { describe, expect, test } from "bun:test";
 
 import twoSum from "../twoSum";
 
-describe("group anagrams", () => {
+describe("two sum", () => {
 	test("test 1", () => {
 		const nums = [2, 7, 11, 15];
 		const target = 9;
