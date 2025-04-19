@@ -15,7 +15,7 @@ describe("contains duplicate ii", () => {
 		expect(containsNearbyDuplicate(nums, k)).toBeTrue();
 	});
 
-	test("test 2", () => {
+	test("test 3", () => {
 		const nums = [1, 2, 3, 1, 2, 3];
 		const k = 2;
 		expect(containsNearbyDuplicate(nums, k)).toBeFalse();
