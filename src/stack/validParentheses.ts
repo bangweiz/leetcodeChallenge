@@ -29,7 +29,7 @@ function isValid(s: string): boolean {
 				break;
 		}
 	}
-    return stack.length === 0;
+	return stack.length === 0;
 }
 
 export default isValid;
